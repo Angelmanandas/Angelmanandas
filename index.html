@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#061948">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#061948">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+		<title>International Platform Trading</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
+		<style>
+		.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+			
+			
+			.slideshow
+			{
+				position: relative;
+				width:100%;
+				height:100vh;
+				overflow: hidden;
+				background-color:black;
+			}
+			.slideshow-item 
+			{
+				width: inherit;
+				height:inherit;
+				position: absolute;
+				animation: cycleImages 31s infinite;
+				opacity: 0;
+			}
+			.slideshow-item:nth-child(1),
+			.slideshow-item:nth-child(1) img
+			{
+				animation-delay: 0s;
+			}
+			.slideshow-item:nth-child(2),
+			.slideshow-item:nth-child(2) img
+			{
+				animation-delay: 10s;
+			}
+			.slideshow-item:nth-child(3),
+			.slideshow-item:nth-child(3) img
+			{
+				animation-delay: 20s;
+			}
+			.slideshow-item img
+			{
+				width: 100%;
+				height:100%;
+				object-fit: cover;
+				animation: zoom 31s infinite;
+			}
+			.slideshow-item-text{
+				max-width: 50%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				color:#fff;
+				padding:10rem 5rem;
+				
+			}
+			.slideshow-item-text h1
+			{
+				text-transform: uppercase;
+				color:#fff;
+				letter-spacing: 3px;
+				margin-bottom: 2.5rem;
+			}
+			.slideshow-item-text p
+			{
+				font-size: 20px;
+			}
+			@keyframes cycleImages
+			{
+				25%
+				{
+					opacity: 1;
+				}
+				40%
+				{
+					opacity: 0;
+				}
+			}
+			@keyframes zoom
+			{
+				100%
+				{
+					transform:scale(1.3);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+		
+
+			
+
+			<!-- 
+			=============================================
+				Theme Header One
+			============================================== 
+			-->
+				<header class="header-two">
+			
+			
+				<div class="theme-menu-wrapper" style="background-color:">
+					<div class="container">
+						<div class="bg-wrapper clearfix">
+							<div class="logo float-left"><a href="index.html"><img src="images/logo.png" alt="" style="width:200px;height:70px"></a></div>
+							<!-- ============== Menu Warpper ================ -->
+					   		<div class="menu-wrapper float-left">
+					   			<nav id="mega-menu-holder" class="clearfix">
+								   <ul class="clearfix">
+									    <li class="active"><a href="index.html">Home</a>
+									    	
+									    </li>
+									    <li><a href="about.html">ABOUT</a>
+									    	
+									    </li>
+									    <li><a href="service.html">Service</a>
+									    	
+									    </li>
+									    <li><a href="career.html">CAREER</a>
+									    	
+									    </li>
+									    
+									    <li><a href="contact.html">contact</a></li>
+								   </ul>
+								</nav> <!-- /#mega-menu-holder -->
+					   		</div> <!-- /.menu-wrapper -->
+					   		<div class="right-widget float-right">
+					   			<ul>
+					   				<li class="cart-icon">
+					   					
+					   				</li>
+					   				<li class="search-option">
+					   					<div class="dropdown">
+					   						<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+											<form action="#" class="dropdown-menu">
+												<input type="text" Placeholder="Enter Your Search">
+												<button><i class="fa fa-search"></i></button>
+											</form>
+					   					</div>
+					   				</li>
+					   			</ul>
+					   		</div> <!-- /.right-widget -->
+						</div> <!-- /.bg-wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.theme-menu-wrapper -->
+			</header> <!-- /.header-two -->
+
+			
+			<div class="slideshow">
+				<div class="slideshow-item">
+				<img src="images/Slider-1.jpg">
+					<div class="slideshow-item-text" >
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Platform <br>to connect <br>the world</h1>
+				<p>by attracting investors from around <br>the globe to delight our clients who trust us.</p>
+				</div>
+				</div>
+				<div class="slideshow-item">
+				<img src="images/Slider-2.jpg">
+						<div class="slideshow-item-text" style="top:50%;text-align: right;left:50%;right:0">
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Platform <br>to connect <br>the world</h1>
+				<p>by attracting investors from around <br>the globe to delight our clients who trust us.</p>
+					</div>
+				</div>
+					
+				<div class="slideshow-item">
+				<img src="images/Slider-3.jpg">
+					<div class="slideshow-item-text">
+					<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Platform to connect the world</h1>
+				<p>by attracting investors from around <br>the globe to delight our clients who trust us.</p>
+				</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			<!--
+			=============================================
+				Theme Main Banner
+			============================================== 
+			-->
+		<!--	<div id="theme-main-banner" class="banner-one">
+				<div data-src="images/Slider-1.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							
+							
+							
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+  
+				
+				
+				
+				
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s" style="color:white;text-shadow: 2px 2px 4px #000000;">Platform <br>to connect <br>the world</h1>
+							<p class="wow fadeInUp animated" style="text-shadow: 2px 2px 4px #000000;">by attracting investors from around <br>the globe to delight our clients who trust us. </p>
+						
+						</div> <!-- /.container -->
+				<!--	</div> <!-- /.camera_caption -->
+				<!--</div>
+				<div data-src="images/Slider-2.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s" style="color:white;text-shadow: 2px 2px 4px #000000;text-align: right">Platform <br>to connect <br>the world</h1>
+							<p class="wow fadeInUp animated" style="text-shadow: 2px 2px 4px #000000;text-align: right">by attracting investors from around <br>the globe to delight our clients who trust us. </p>
+						</div> <!-- /.container
+					</div> <!-- /.camera_caption -
+				</div>
+				<div data-src="images/Slider-3.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s" style="color:white;text-shadow: 2px 2px 4px #000000;">Platform <br>to connect <br>the world</h1>
+							<p class="wow fadeInUp animated" style="text-shadow: 2px 2px 4px #000000;">by attracting investors from around <br>the globe to delight our clients who trust us. </p>
+						</div> <!-- /.container 
+					</div>/.camera_caption 
+				</div>
+			</div> <!-- /#theme-main-banner -->
+			
+			
+			<!-- 
+			=============================================
+				Top Feature
+			============================================== 
+			-->
+			
+
+			<!-- 
+			=============================================
+				About Company
+			============================================== 
+			-->
+			<div class="about-compnay section-spacing" style="padding-top:100px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-12"><img src="images/about-us.jpg" alt=""></div>
+						<div class="col-lg-6 col-12">
+							<div class="text">
+								<div class="theme-title-one">
+									<h2 class="wow fadeInUp animated" data-wow-delay="0.2s">About Our Company</h2>
+									<p class="wow fadeInUp animated" data-wow-delay="0.2s">IPT is a global platform established in 2021, based in Abu Dhabi. Provides an outstanding line of services to our clients by working with highly skilled and experienced professionals.</p>
+									
+								</div> <!-- /.theme-title-one -->
+								<center>
+								<ul class="mission-goal clearfix">
+									<li>
+										<center><img src="images/vicon.png" alt="" width="50" height="70" class="wow fadeInUp animated" data-wow-delay="0.2s"></center><br>
+										<h4 class="wow fadeInUp animated" data-wow-delay="0.2s">Vision</h4>
+										<p class="wow fadeInUp animated" data-wow-delay="0.2s">Be the niche in the global trading scope. </p>
+									</li>
+									<li>
+										<center><img src="images/micon.png" alt="" width="80" height="70" class="wow fadeInUp animated" data-wow-delay="0.2s"></center><br>
+										<h4 class="wow fadeInUp animated" data-wow-delay="0.2s">Mission</h4>
+										<p class="wow fadeInUp animated" data-wow-delay="0.2s">To accelerate economic growth by creating tremendous investments.</p>
+									</li>
+									
+								</ul> <!-- /.mission-goal --></center>
+							</div> <!-- /.text -->
+						</div> <!-- /.col- -->
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+			</div> <!-- /.about-compnay -->
+
+
+			<!-- 
+			=============================================
+				Feature Banner
+			============================================== 
+			-->
+			<div class="feature-banner section-spacing">
+				<div class="opacity">
+					<div class="container">
+						<h2 class="wow fadeInUp animated" data-wow-delay="0.2s">We provide high quality services &amp; innovative solutions for the realiable growth</h2>
+						
+					</div> <!-- /.container -->
+				</div> <!-- /.opacity -->
+			</div> <!-- /.feature-banner -->
+
+
+			<!-- 
+			=============================================
+				Service Style One
+			============================================== 
+			-->
+			<div class="service-style-one section-spacing" style="">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2 class="wow fadeInUp animated" data-wow-delay="0.2s">Our SERVICES</h2>
+						
+					</div> <!-- /.theme-title-one -->
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/3.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Military and Defense</a></h5>
+										
+								
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/4.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Oil and Gas</a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/5.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Energy </a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/6.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Water Treatment </a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/7.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Infrastructure </a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/8.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Logistics</a></h5>
+									<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/81.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Communications</a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/82.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Industrial </a></h5>
+									<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-4 col-md-6 col-12">
+								<div class="single-service">
+									<div class="img-box"><img src="images/home/83.jpg" alt=""></div>
+									<div class="text">
+										<h5><a href="service.html">Agriculture</a></h5>
+										<br>
+									</div> <!-- /.text -->
+								</div> <!-- /.single-service -->
+							</div> <!-- /.col- -->
+						</div> <!-- /.row -->
+					</div> <!-- /.wrapper -->
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.service-style-one -->
+
+
+			<!--
+			=====================================================
+				Testimonial Slider
+			=====================================================
+			-->
+			
+		
+			
+
+
+			<!--
+			=====================================================
+				Free Consultation
+			=====================================================
+			-->
+			<div class="consultation-form section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2 class="wow fadeInUp animated" data-wow-delay="0.2s">FREE CONSULTATION</h2>
+						
+					</div> <!-- /.theme-title-one -->
+					<div class="clearfix main-content no-gutters row">
+						<div class="col-xl-6 col-lg-5 col-12"><div class="img-box"></div></div>
+						<div class="col-xl-6 col-lg-7 col-12">
+							<div class="form-wrapper">
+								<form action="#" class="theme-form-one">
+									<div class="row">
+										<div class="col-md-6"><input type="text" placeholder="Name *"></div>
+										<div class="col-md-6"><input type="text" placeholder="Phone *"></div>
+										<div class="col-md-6"><input type="email" placeholder="Email *"></div>
+										<div class="col-sm-6"><input type="text" placeholder="Website *" name="web"></div>
+										<div class="col-12"><textarea placeholder="Message"></textarea></div>
+									</div> <!-- /.row -->
+									<button class="theme-button-one">GET A QUOTES</button>
+								</form>
+							</div> <!-- /.form-wrapper -->
+						</div> <!-- /.col- -->
+					</div> <!-- /.main-content -->
+				</div> <!-- /.container -->
+			</div> <!-- /.consultation-form -->
+
+
+
+			
+
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<footer class="theme-footer-one">
+				<div class="top-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-sm-6 about-widget">
+								<h6 class="title">ABOUT US</h6>
+								<img src="images/logo.png" style="width:200px;height:70px;background-color:#FFFFFF;border-radius:5px" ><br>
+								<p>Platform to connect the world by attracting investors from around the globe to delight our clients who trust us.</p>
+								
+							</div> <!-- /.about-widget -->
+						<div class="col-xl-2 col-lg-3 col-sm-6 footer-list" style="list-style:none">
+								<h6 class="title">QUICK LINKS</h6>
+								<ul>
+									<li> <a href="about.html">About</a></li>
+									<li> <a href="service.html">Services</a></li>
+									<li><a href="career.html">Careers</a></li>
+									<li> <a href="contact.html">Contact</a></li>
+									
+								</ul>
+							</div> <!-- /.footer-list -->
+							<div class="col-xl-3 col-lg-3 col-sm-6 footer-list">
+								<h6 class="title">CONTACT</h6>
+							
+								<ul>
+									<li><i class="flaticon-phone-call" style="color:#FFFFFF"></i> &nbsp;<a href="#">+971 2 8869777</a></li>
+									<li><i class="flaticon-multimedia" style="color:#FFFFFF"></i> &nbsp; <a href="#">info@iptm.ae </a></li>
+									<li><i class="flaticon-placeholder" style="color:#FFFFFF"></i> &nbsp; <a href="#">P.O Box:&nbsp;54992, Abu Dhabi</a></li>
+								
+									
+								</ul>
+							</div> <!-- /.footer-list -->
+							<div class="col-xl-4 col-lg-4 col-sm-6 footer-newsletter" style="background-color: #194188;padding-top:20px;padding-bottom:20px;border-radius:5px">
+								<h6 class="title">NEWSLETTER</h6>
+								<form action="#">
+									<input type="text" placeholder="Name *" style="color:white">
+									<input type="email" placeholder="Email *" style="color:white">
+									<button class="theme-button-one">SUBSCRIBE</button>
+								</form>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.top-footer -->
+				<div class="bottom-footer" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-12"><p>&copy; Copyrights 2022. All Rights Reserved. Designed by Inspired Media</p></div>
+							
+						</div>
+					</div>
+				</div> <!-- /.bottom-footer -->
+			</footer> <!-- /.theme-footer -->
+			
+
+	        
+
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s">
+				<i class="fa fa-angle-up" aria-hidden="true"></i>
+			</button>
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="vendor/jquery.2.2.3.min.js"></script>
+		<!-- Popper js -->
+		<script src="vendor/popper.js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Camera Slider -->
+		<script src='vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+	    <script src='vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
+	    <script src='vendor/Camera-master/scripts/camera.min.js'></script>
+	    <!-- menu  -->
+		<script src="vendor/menu/src/js/jquery.slimmenu.js"></script>
+		<!-- WOW js -->
+		<script src="vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- owl.carousel -->
+		<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- js count to -->
+		<script src="vendor/jquery.appear.js"></script>
+		<script src="vendor/jquery.countTo.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
